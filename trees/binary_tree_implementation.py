@@ -24,8 +24,8 @@ class TreeOperations:
             return
         else:
             print(root.value)
-            TreeOperations.print_tree(root.left)
-            TreeOperations.print_tree(root.right)
+            TreeOperations.print_tree_depth_first_traversal(root.left)
+            TreeOperations.print_tree_depth_first_traversal(root.right)
 
 
 if __name__ == '__main__':
@@ -33,6 +33,6 @@ if __name__ == '__main__':
     sample_tree.left = (TreeNode(3))
     sample_tree.right = (TreeNode(5))
     sample_tree.left.left = (TreeNode(6))
-    TreeOperations.print_tree(sample_tree)
+    TreeOperations.print_tree_depth_first_traversal(sample_tree)
     # print(vars(sample_tree))
 
