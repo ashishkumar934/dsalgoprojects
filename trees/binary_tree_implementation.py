@@ -5,6 +5,9 @@ class TreeNode:
         self.left = None
         self.right = None
 
+    def print_value(self):
+        print(self.value)
+
 
 class TreeOperations:
 
